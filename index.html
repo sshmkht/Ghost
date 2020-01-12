@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ghost Code</title>
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Neuton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<nav class="col-md-7">
+					<ul class="menu">
+						<li><a href="#">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#cipher">CIPHER</a></li>
+						<li><a href="#contacts">CONTACTS</a></li>
+					</ul>
+				</nav>
+				<div class="col-sm-6 offset-sm-3 col-md-4 offset-md-1">
+					<a href="#">
+						<img class="logo" src="img/icons/logo.png" alt=" ">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="promo">
+		<div class="container ">
+			<div class="row">
+				<div class="col-5 col-sm-6 col-md-6 col-lg-5 offset-lg-1">
+					<img class="promo_img" src="img/main.png" alt=" ">
+				</div>
+				<div class="col-7 col-sm-6 col-md-6 col-lg-5">
+					<div class="promo_text">
+						<h1 class="header">OH, HI THERE!</h1>
+						<div class="descr">
+							My name is Bed Sheet <br>
+							Here I help people encrypt their messages<br>
+							Want to try?
+						</div>
+						<button class="promo_btn">
+							<a href="#cipher">try now</a>
+							<img class="promo_btn_img" src="img/book.png" alt="TRY NOW">
+						</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="about">
+		<div class="container ">
+			<h2 class="title">ABOUT</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-6">
+					<div class="about_text">
+						<h2 class="header">WHAT I USE?</h2>
+						<div class="descr">
+							I use Caesar's Cipher to create your messageges.
+							The cipher is named after the Roman commander Guy Julius Caesar,
+							who used it for secret correspondence with his generals.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<img src="img/first.jpg" alt="WHAT I USE?">
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<img src="img/second.jpg" alt="HOW IT WORKS">
+				</div>
+				<div class="col-sm-6 col-md-6">
+					<div class="about_text">
+						<h2 class="header">HOW IT WORKS</h2>
+						<div class="descr">
+							The Caesar’s Cipher is a simple substitution cipher
+							where the ciphertext alphabet is shifted by a given number.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="cipher" class="cipher">
+		<div class="container">
+			<h2 class="title">CIPHER</h2>
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="cipher_text">Enter text:</div>
+					<textarea name="user-text" id="text-to-work" class="cipher_textarea"></textarea>
+					<div class="cipher_btn-wrapper">
+						<button id="encrypt-btn" class="cipher_btn">encrypt</button>
+						<button id="decrypt-btn" class="cipher_btn">decrypt</button>
+						<button id="btn-reset" class="cipher_btn">reset</button>
+					</div>
+					<div class="cipher_text">Shift step:</div>
+					<select name="user-step" id="encrypt-step" class="cipher_select">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+					<div class="cipher_text">Result:</div>
+					<img src="img/icons/dance.png">
+					<textarea readonly id="output" class="cipher_textarea"></textarea>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 offset-sm-8 col-md-3 offset-md-9">
+					<div class="footer_contacts">
+						Milky Way Solar System 
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

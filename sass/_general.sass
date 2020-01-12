@@ -1,0 +1,112 @@
+*
+    font-family: 'Neuton', serif
+body
+	background: #292824
+ul
+	padding-left: 0
+.menu
+	display: flex
+	justify-content: space-around
+	list-style: none
+	margin-top: 27px
+	a
+	    color: $main_color
+	    font-size: 18px
+	    letter-spacing: 2px
+	    text-decoration: none
+	    border-radius: 8px
+	    padding: 5px 20px
+	    transition: 0.3s all
+	    &:hover 
+	       background: #34332f
+.logo
+	display: block
+	margin: 0 auto
+	margin-top: 15px
+.promo
+	padding: 100px 0
+	&_text
+	    margin-top: 90px
+	&_btn
+	    @include btn_hover
+	    margin-top: 74px
+	    font-size: 29px
+	    &_img
+	        position: absolute
+	        width: 244px
+	        left: -45px
+	        top: -88px
+	        z-index: -1
+	    a
+	        color: $main_color
+	        text-decoration: none
+.header
+	font-size: 50px
+	letter-spacing: 3px
+	color: #fff
+	text-shadow: 0 0 2px #FFE, 0 0 10px #e9bc5f, 0 0 20px #e9bc5f, 0 0 30px #e9bc5f
+	text-align: center     
+.descr
+    font-size: 25px
+    position: relative
+    color: $main_color
+    line-height: 50px
+    text-align: center
+    letter-spacing: 2px
+.title
+	font-size: 40px
+	color: $grey
+	letter-spacing: 7px
+	text-align: center
+.about
+	&_text
+	    margin-top: 70px
+	    background: #34332f
+	    padding: 25px
+	    border-radius: 25px
+	img
+	    display: block
+	    margin: 0 auto
+.cipher
+	&_text
+	    font-size: 33px
+	    line-height: 45px
+	    color: $yellow
+	    margin-top: 40px
+	    text-align: center
+	    letter-spacing: 3px
+	&_textarea
+	    width: 100%
+	    height: 230px
+	    resize: none
+	    border-radius: 8px
+	    background: #ddd
+	    font-size: 20px
+	    letter-spacing: 2px
+	    padding: 13px
+	    margin-top: 20px
+	img
+	    display: block
+	    margin: 0 auto
+	    margin-top: 10px
+	&_btn-wrapper
+	    display: flex
+	    justify-content: center
+	&_btn
+	    @include btn_hover
+	    margin: 10px 25px
+	&_select
+	    display: block
+	    margin: 0 auto
+	    border-radius: 8px
+	    padding: 5px
+	    margin-top: 7px
+.footer
+	height: 160px
+	padding: 78px 0 30px 0
+	&_contacts
+	    color: $main_color
+	    font-size: 18px
+
+
+
